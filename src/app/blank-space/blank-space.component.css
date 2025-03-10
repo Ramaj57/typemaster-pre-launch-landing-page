@@ -2,6 +2,6 @@
   div {
     width: 8.44rem;
     height: 15rem;
-    background-color: var(--blank-space);
+    background-color: var(--btn1-blank);
   }
 }
