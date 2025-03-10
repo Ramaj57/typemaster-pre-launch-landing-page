@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { PreorderButtonComponent } from "./preorder-button/preorder-button.component";
+import { FeaturesCardComponent } from "./features-card/features-card.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [PreorderButtonComponent, FeaturesCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
