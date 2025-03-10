@@ -1,0 +1,7 @@
+@media (min-width: 90rem) {
+  div {
+    width: 8.44rem;
+    height: 15rem;
+    background-color: var(--blank-space);
+  }
+}
