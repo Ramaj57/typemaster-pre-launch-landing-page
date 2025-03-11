@@ -20,9 +20,9 @@
 </div>
 </div>
 
-<div class="grid-component">
+<div class="grid-container">
 @for (card of cards; track card.feature){
-  <app-features-card/>
+  <app-features-card [src]="card.images.src" [alt]="card.images.alt" [feature]="card.feature" [description]="card.description"/>
 }
 </div>
 <footer>Typemaster 2021  |  All Rights Reserved</footer>

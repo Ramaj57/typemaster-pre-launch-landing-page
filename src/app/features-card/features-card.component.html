@@ -1,5 +1,7 @@
 <div class="card-container">
-<img src="" alt="">
-<h1></h1>
-<p></p>
+  <div class="image">
+    <img [src]="src()" [alt]="alt()" />
+  </div>
+  <h1>{{ feature() }}</h1>
+  <p>{{ description() }}</p>
 </div>
