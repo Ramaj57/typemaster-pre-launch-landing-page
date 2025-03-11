@@ -7,9 +7,10 @@
   font-family: 'barlow', sans-serif;
   --btn1-blank: #e8eff2;
   --paragraph: #7b8bad;
-  --heading-btn1Hover: #162542;
+  --heading-btn1Hover-btn1Text: #162542;
   --btn2-Icon: #f16718;
-  --btn2Hover: #ff9b62;  
+  --btn2Hover: #ff9b62;
+  --btn2Text-btn1HoverText: #FFFFFF; 
 }
 
 /* medium is font-weight 500
