@@ -1,1 +1,10 @@
-<button></button>
+<button
+  [ngStyle]="{
+    backgroundColor: isHovered ? btnBgHovColor() : btnBgColor(),
+    color: isHovered ? btnHovColor() : btnColor()
+  }"
+  (mouseenter)="isHovered = true"
+  (mouseleave)="isHovered = false"
+>
+  PRE-ORDER NOW
+</button>

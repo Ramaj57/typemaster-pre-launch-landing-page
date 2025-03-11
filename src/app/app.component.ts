@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { PreorderButtonComponent } from "./preorder-button/preorder-button.component";
 import { FeaturesCardComponent } from "./features-card/features-card.component";
+import { buttonData, cardData } from '../data';
+
 
 @Component({
   selector: 'app-root',
@@ -11,4 +13,6 @@ import { FeaturesCardComponent } from "./features-card/features-card.component";
 })
 export class AppComponent {
   title = 'typemaster-pre-launch-landing-page';
+  cards = cardData;
+  button = buttonData;
 }
