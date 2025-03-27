@@ -21,8 +21,8 @@
 p,footer,span{
   color:var(--paragraph);
   font-weight: 500;
-  line-height:26px;
-  font-size: 16px;
+  line-height:1.625rem;
+  font-size: 1rem;
 }
 
 h1,h2{

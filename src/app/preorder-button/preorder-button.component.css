@@ -9,7 +9,7 @@ button {
   cursor: pointer;
 }
 
-@media (min-width: 48em) {
+@media (min-width: 48rem) {
   button {
     width: 10.94rem;
   }
