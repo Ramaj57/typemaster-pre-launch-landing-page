@@ -1,28 +1,68 @@
 <header>
-<img src="" alt="">
-<app-preorder-button [btnBgColor]="button[0].btnBgColor" [btnColor]="button[0].btnColor" [btnBgHovColor]="button[0].btnBgHovColor" [btnHovColor]="button[0].btnHovColor"/>
+  <img src="assets\shared\logo.svg" alt="Logo" class="logo" />
+  <app-preorder-button
+    class="hdr-btn"
+    [btnBgColor]="button[0].btnBgColor"
+    [btnColor]="button[0].btnColor"
+    [btnBgHovColor]="button[0].btnBgHovColor"
+    [btnHovColor]="button[0].btnHovColor"
+  />
 </header>
 <div class="left">
-<h1></h1>
-<p></p>
-<app-preorder-button [btnBgColor]="button[1].btnBgColor" [btnColor]="button[1].btnColor" [btnBgHovColor]="button[1].btnBgHovColor" [btnHovColor]="button[1].btnHovColor"/>
-<span>Release on 5/27</span>
+  <div class="typemaster-card">
+    <h1>TYPEMASTER KEYBOARD</h1>
+    <p class="typemaster-para">
+      Improve your productivity and gaming without breaking the bank. Upgrade to
+      a high quality mechanical typing experience.
+    </p>
+    <app-preorder-button
+      class="typemaster-btn"
+      [btnBgColor]="button[1].btnBgColor"
+      [btnColor]="button[1].btnColor"
+      [btnBgHovColor]="button[1].btnBgHovColor"
+      [btnHovColor]="button[1].btnHovColor"
+    />
+    <span><strong>RELEASE ON 5/27</strong></span>
+  </div>
+  <div class="right">
+    <img src="assets\mobile\image-keyboard.jpg" alt="" class="keyboard-img" />
+  </div>
+  <app-blank-space class="blank-space1" />
+  <app-blank-space class="blank-space2" />
 </div>
-<div class="right">
-  <img src="" alt="">
-</div>
-<div class="image-flex">
-<img src="" alt="">
-<img src="" alt="">
-<div class="keyboard">
-<h2></h2>
-<p></p>
-</div>
+<div class="desktop-flex">
+  <div class="image-flex">
+    <div class="mix-blend-container">
+      <img
+        src="assets\mobile\image-phone-and-keyboard.jpg"
+        alt=""
+        class="phone-keyboard-img"
+      />
+    </div>
+    <img
+      src="assets\mobile\image-glass-and-keyboard.jpg"
+      alt=""
+      class="glass-keyboard-img"
+    />
+  </div>
+  <div class="keyboard">
+    <h2>MECHANICAL WIRELESS KEYBOARD</h2>
+    <p class="wireless">
+      The Typemaster keyboard boasts top-notch build and practical design. It
+      offers a wide variety of switches and keycaps, along with reliable
+      wireless connectivity.
+    </p>
+  </div>
 </div>
 
 <div class="grid-container">
-@for (card of cards; track card.feature){
-  <app-features-card [src]="card.images.src" [alt]="card.images.alt" [feature]="card.feature" [description]="card.description"/>
-}
+  @for (card of cards; track card.feature){
+  <app-features-card
+    [src]="card.images.src"
+    [alt]="card.images.alt"
+    [feature]="card.feature"
+    [description]="card.description"
+  />
+  }
 </div>
-<footer>Typemaster 2021  |  All Rights Reserved</footer>
+<footer><strong>Typemaster 2021</strong> | All Rights Reserved</footer>
